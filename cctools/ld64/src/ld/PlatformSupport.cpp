@@ -105,7 +105,7 @@ void VersionSet::checkObjectCrosslink(const VersionSet& objectPlatforms, const s
                 if (enforce == PlatEnforce::warnInternalErrorExternal) {
                     enforce = (internalSDK ? PlatEnforce::warning : PlatEnforce::error);
                 }
-                if ( platformMismatchesAreWarning && (enforce == PlatEnforce::error) )
+                if ( true && (enforce == PlatEnforce::error) )
                     enforce = PlatEnforce::warning;
                 switch (enforce) {
                     case PlatEnforce::allow:
